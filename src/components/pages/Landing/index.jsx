@@ -43,12 +43,20 @@ export const LandingPage = () => {
       </section>
       <section className='graphs-section flex-c pt-10'>
       <div className='flex-c'>
-        <div className='flex justify-center m-14 gap-20 text-lg'>
-        <div className="container">
-          <img src={pieChart} alt='Pie Chart' className='w-64 mb-4' />
-          <h3>Search Grant Rates by Nationality</h3>
-        </div>
-        </div>
+          <div className='flex justify-center m-14 gap-20 text-lg'>
+            <div className='flex-c gap-3 font-body'>
+              <img src={barGraph} alt="Bar Graph" className='w-64 mb-4' />
+              <h3>Search Grant Rates By Office</h3>
+            </div>
+            <div className='flex-c gap-3 font-body'>
+              <img src={pieChart} alt='Pie Chart' className='w-64 mb-4' />
+              <h3>Search Grant Rates by Nationality</h3>
+            </div>
+            <div className='flex-c gap-3 font-body'>
+              <img src={lineGraph} alt='Line Graph' className='w-64 mb-4' />
+              <h3>Search Grant Rates Over Time</h3>
+            </div>
+          </div>
       </div>
       </section>
       Landing Page
