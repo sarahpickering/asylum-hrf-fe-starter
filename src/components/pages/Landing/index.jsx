@@ -65,6 +65,13 @@ export const LandingPage = () => {
               >
                 View The Data
               </button>
+              <button
+                className='bg-[#aaa] px-[10px] py-[5px] text-white text-md font-semibold
+                hover:opacity-85 hover:scale-105'
+                onClick={ downloadCSV }
+              >
+                Download The Data
+                </button>
             </div>
       </div>
       </section>
