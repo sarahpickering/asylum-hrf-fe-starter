@@ -57,6 +57,15 @@ export const LandingPage = () => {
               <h3>Search Grant Rates Over Time</h3>
             </div>
           </div>
+          <div className='flex align-center mx-auto gap-8 font-body'>
+              <button
+                className='bg-[#aaa] px-[10px] py-[5px] text-white text-md font-semibold
+                hover:opacity-85 hover:scale-105'
+                onClick={() => navigate('/graphs')}
+              >
+                View The Data
+              </button>
+            </div>
       </div>
       </section>
       Landing Page
