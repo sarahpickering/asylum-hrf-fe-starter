@@ -86,12 +86,12 @@ export const LandingPage = () => {
             </div>
       </section>
 
-      <section className='middle-section flex'>
+      <section className='about-section flex'>
         <div className='flex-1 hrf-img-container content-center p-20'>
           <img src={paperStack} alt="Human Rights First" className="hrf-img rounded-3xl h-[70%] w-[100%]" />
         </div>
-        <div className='middle-section-text-container flex-1 content-center p-20'>
-          <p className='text-xl font-body'>
+        <div className='about-section-text-container flex-1 content-center p-20'>
+          <p className='text-l font-body'>
             Human Rights First has developed a search tool that provides a user-friendly way to explore a dataset of 
             asylum decisions made by the USCIS Asylum Office between FY 2016 and May 2021, obtained through a Freedom 
             of Information Act request. Users can search asylum grant rates by year,
