@@ -42,21 +42,32 @@ export const LandingPage = () => {
         </div>
       </section>
       <section className='graphs-section flex-c pt-10'>
-      <div className='flex-c'>
-          <div className='flex justify-center m-14 gap-20 text-lg'>
-            <div className='flex-c gap-3 font-body'>
-              <img src={barGraph} alt="Bar Graph" className='w-64 mb-4' />
-              <h3>Search Grant Rates By Office</h3>
+        <div className="w-full flex justify-center">
+            <div className="flex gap-20 font-body">
+
+          <div className='w-64 flex flex-col items-center gap-3 font-body'>
+            <div className="w-64 h-64 flex items-center justify-center">
+              <img src={barGraph} alt="Bar Graph" className="object-contain max-w-full max-h-full" />
             </div>
-            <div className='flex-c gap-3 font-body'>
-              <img src={pieChart} alt='Pie Chart' className='w-64 mb-4' />
-              <h3>Search Grant Rates by Nationality</h3>
+            <h3>Search Grant Rates By Office</h3>
             </div>
-            <div className='flex-c gap-3 font-body'>
-              <img src={lineGraph} alt='Line Graph' className='w-64 mb-4' />
-              <h3>Search Grant Rates Over Time</h3>
+
+            <div className='w-64 flex flex-col items-center gap-3 font-body'>
+              <div className="w-64 h-64 flex items-center justify-center">
+              <img src={pieChart} alt="Pie Chart" className="object-contain max-w-full max-h-full" />
+              </div>
+              <h3>TEST</h3>
+            </div>
+
+            <div className='w-64 flex flex-col items-center gap-3 font-body'>
+              <div className="w-64 h-64 flex items-center justify-center">
+              <img src={lineGraph} alt='Line Graph' className="object-contain max-w-full max-h-full" />
+            </div>
+            <h3>Search Grant Rates Over Time</h3>
             </div>
           </div>
+        </div>
+
           <div className='flex align-center mx-auto gap-8 font-body'>
               <button
                 className='bg-[#aaa] px-[10px] py-[5px] text-white text-md font-semibold
@@ -73,7 +84,6 @@ export const LandingPage = () => {
                 Download The Data
                 </button>
             </div>
-      </div>
       </section>
       Landing Page
       <div>{'Type this into Canvas: ' + decodeBase64('VGltZTJDb2RlIQ==')}</div>
