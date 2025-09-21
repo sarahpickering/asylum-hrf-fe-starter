@@ -99,6 +99,12 @@ export const LandingPage = () => {
           </p>
         </div>
       </section>
+
+      <section className='insights-section flex-c gap-16'>
+        <div className='insights-section-header'>
+          <h3 className='text-3xl font-body'>Systematic Disparity Insights</h3>
+        </div>
+      </section>
       Landing Page
       <div>{'Type this into Canvas: ' + decodeBase64('VGltZTJDb2RlIQ==')}</div>
     </div>
