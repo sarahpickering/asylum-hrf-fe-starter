@@ -56,7 +56,7 @@ export const LandingPage = () => {
               <div className="w-64 h-64 flex items-center justify-center">
               <img src={pieChart} alt="Pie Chart" className="object-contain max-w-full max-h-full" />
               </div>
-              <h3>TEST</h3>
+              <h3>Search Grant Rates By Nationality</h3>
             </div>
 
             <div className='w-64 flex flex-col items-center gap-3 font-body'>
@@ -68,7 +68,7 @@ export const LandingPage = () => {
           </div>
         </div>
 
-          <div className='flex align-center mx-auto gap-8 font-body'>
+          <div className='flex align-center mx-auto gap-7 font-body mt-8'>
               <button
                 className='bg-[#aaa] px-[10px] py-[5px] text-white text-md font-semibold
                 hover:opacity-85 hover:scale-105'
@@ -104,6 +104,28 @@ export const LandingPage = () => {
         <div className='insights-section-header'>
           <h3 className='text-3xl font-body'>Systematic Disparity Insights</h3>
         </div>
+
+        <div className="flex justify-center gap-12">
+        <div className='w-64 flex flex-col items-center gap-3 font-body'>
+            <div className="w-64 h-64 flex items-center justify-center">
+              <h3>36%</h3>
+              </div>
+              </div>
+
+            <div className='w-64 flex flex-col items-center gap-3 font-body'>
+            <div className="w-64 h-64 flex items-center justify-center">
+              <h3>5%</h3>
+              </div>
+            </div>
+
+            <div className='w-64 flex flex-col items-center gap-3 font-body'>
+            <div className="w-64 h-64 flex items-center justify-center">
+              <h3>6x Lower</h3>
+              </div>
+            </div>
+            </div>
+
+
       </section>
       Landing Page
       <div>{'Type this into Canvas: ' + decodeBase64('VGltZTJDb2RlIQ==')}</div>
