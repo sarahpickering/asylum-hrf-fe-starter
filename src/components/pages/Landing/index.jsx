@@ -91,7 +91,7 @@ export const LandingPage = () => {
           <img src={paperStack} alt="Human Rights First" className="hrf-img rounded-3xl h-[70%] w-[100%]" />
         </div>
         <div className='about-section-text-container flex-1 content-center p-20'>
-          <p className='text-m font-body'>
+          <p className='text-sm font-body'>
             Human Rights First has developed a search tool that provides a user-friendly way to explore a dataset of 
             asylum decisions made by the USCIS Asylum Office between FY 2016 and May 2021, obtained through a Freedom 
             of Information Act request. Users can search asylum grant rates by year,
@@ -106,44 +106,51 @@ export const LandingPage = () => {
         </div>
 
         <div className="flex justify-center gap-12">
-          <div className='w-64 flex flex-col items-center gap-4 font-body'>
+          <div className='w-92 flex flex-col items-center gap-4 font-body'>
             <div className="w-64 flex items-center justify-center">
               <h3>36%</h3>
             </div>
-              <p className="text-sm">By the end of the Trump administration, the average asylum office grant rate had fallen 36% 
+              <p className="text-xs">By the end of the Trump administration, the average asylum office grant rate had fallen 36% 
                 from an average of 44 percent in fiscal year 2016 to 28 percent in fiscal year 2020.</p>
           </div>
 
-          <div className='w-64 flex flex-col items-center gap-4 font-body'>
+          <div className='w-92 flex flex-col items-center gap-4 font-body'>
             <div className="w-64 flex items-center justify-center">
               <h3>5%</h3>
             </div>
-              <p className="text-sm">The New York asylum office grant rate dropped to 5 percent in fiscal year 2020.</p>
+              <p className="text-xs">The New York asylum office grant rate dropped to 5 percent in fiscal year 2020.</p>
           </div>
 
-          <div className='w-64 flex flex-col items-center gap-4 font-body'>
+          <div className='w-92 flex flex-col items-center gap-4 font-body'>
             <div className="w-64 flex items-center justify-center">
               <h3>6x Lower</h3>
             </div>
-              <p className='text-sm mb-0'>Between fiscal year 2017 and 2020, the New York asylum office's average grant
+              <p className='text-xs mb-0'>Between fiscal year 2017 and 2020, the New York asylum office's average grant
                 rate was 6 times lower than the San Francisco asylum office.
               </p>
           </div>
         </div>
-
-            <div className='flex items-center mx-auto gap-5 font-body mt-8'>
-              <button
-                className='bg-[#666555] px-4 py-2 text-white text-md font-semibold
-                hover:opacity-85 hover:scale-105'
-                onClick={handleReadMore}
-                >
-                Read More
-              </button>
-            </div>
-
-
       </section>
-      Landing Page
+
+
+          <div className='flex items-center mx-auto gap-4 font-body mt-8 mb-0'>
+            <button
+              className='bg-[#666555] px-3 py-1 text-white text-md font-semibold
+              hover:opacity-85 hover:scale-105'
+              onClick={handleReadMore}
+              >
+              Read More
+            </button>
+          </div>
+
+          <div className='scroll-to-top p-6'>
+            <button className="scroll-to-top text-xs rounded-lg" 
+            onClick={scrollToTop}>
+              Back To Top ^
+            </button>
+          </div>
+
+      
       
     </div>
   );
