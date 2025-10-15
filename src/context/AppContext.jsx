@@ -4,6 +4,7 @@ import testData from '../data/test_data.json';
 import { useLocalStorage } from '../hooks/useLocalStorage.js';
 
 const AppContext = createContext({});
+const API_URL = 'https://asylum-be.onrender.com';
 
 /**
  * TODO: Ticket 2:
@@ -17,9 +18,9 @@ const useAppContextProvider = () => {
 
   useLocalStorage({ graphData, setGraphData });
 
-  const getFiscalData = () => {
-    // TODO: Replace this with functionality to retrieve the data from the fiscalSummary endpoint
-    const fiscalDataRes = testData;
+  const getFiscalData = async () => {
+    const fiscalResponse = await axios.get(`${API_URL}/fiscalSummary`)
+    const fiscalDataRes = fiscalResponse.data;
     return fiscalDataRes;
   };
 
