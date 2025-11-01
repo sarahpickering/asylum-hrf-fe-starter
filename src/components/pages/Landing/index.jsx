@@ -24,7 +24,7 @@ export const LandingPage = () => {
       } else {
         window.scrollBy(0, scrollStep);
       }
-    }, 10); 
+    }, 17); 
   };
 
   const handleReadMore = () => {
