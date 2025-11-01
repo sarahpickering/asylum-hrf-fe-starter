@@ -26,7 +26,8 @@ const useAppContextProvider = () => {
 
   const getCitizenshipResults = async () => {
     // TODO: Replace this with functionality to retrieve the data from the citizenshipSummary endpoint
-    const citizenshipRes = testData.citizenshipResults;
+    const citizenshipRes = await axios.get(`${API_URL}/citizenshipSummary`)
+    const citizenDataRes = citizenshipRes.data
     return citizenshipRes;
   };
 
@@ -36,6 +37,7 @@ const useAppContextProvider = () => {
 
   const fetchData = async () => {
     // TODO: fetch all the required data and set it to the graphData state
+
   };
 
   const clearQuery = () => {
