@@ -20,15 +20,13 @@ const useAppContextProvider = () => {
 
   const getFiscalData = async () => {
     const fiscalResponse = await axios.get(`${API_URL}/fiscalSummary`)
-    const fiscalDataRes = fiscalResponse.data;
-    return fiscalDataRes;
+    return fiscalResponse.data;
   };
 
   const getCitizenshipResults = async () => {
     // TODO: Replace this with functionality to retrieve the data from the citizenshipSummary endpoint
     const citizenshipRes = await axios.get(`${API_URL}/citizenshipSummary`)
-    const citizenDataRes = citizenshipRes.data
-    return citizenshipRes;
+    return citizenshipRes.data;
   };
 
   const updateQuery = async () => {
