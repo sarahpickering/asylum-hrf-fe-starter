@@ -19,14 +19,16 @@ const useAppContextProvider = () => {
   useLocalStorage({ graphData, setGraphData });
 
   const getFiscalData = async () => {
-    const fiscalResponse = await axios.get(`${API_URL}/fiscalSummary`)
-    return fiscalResponse.data;
+    const fiscalRes = await axios.get(`${API_URL}/fiscalSummary`);
+    console.log(fiscalRes.data)
+    const fiscalResData = fiscalRes.data;
+    return fiscalResData;
   };
 
   const getCitizenshipResults = async () => {
-    // TODO: Replace this with functionality to retrieve the data from the citizenshipSummary endpoint
-    const citizenshipRes = await axios.get(`${API_URL}/citizenshipSummary`)
-    return citizenshipRes.data;
+    const citizenRes = await axios.get(`${API_URL}/citizenshipSummary`);
+    const citizenData = citizenRes.data;
+    return citizenData;
   };
 
   const updateQuery = async () => {
@@ -34,8 +36,9 @@ const useAppContextProvider = () => {
   };
 
   const fetchData = async () => {
-    // TODO: fetch all the required data and set it to the graphData state
-
+    const [fiscalData, citizenshipResults] = await Promise.all([getFiscalData(), getCitizenshipResults()]);
+    setGraphData({ ...fiscalData, citizenshipResults });
+    setIsDataLoading(false);
   };
 
   const clearQuery = () => {
