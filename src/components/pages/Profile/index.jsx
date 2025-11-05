@@ -15,6 +15,14 @@ const Profile = () => {
     return <div className='text-center p-4'>Loading...</div>;
   }
 
+  const handleNameChange = e => {
+    setName(e.target.value)
+  }
+
+  const saveName = () => {
+    setIsEditing(false)
+  }
+
   return (
     <div>Profile Page</div>
   );
