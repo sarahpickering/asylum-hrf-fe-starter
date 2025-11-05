@@ -7,9 +7,9 @@
  * - Make this page a protected Route
  */
 const Profile = () => {
-  // TODO: Replace these with functionality from Auth0
-  const isLoading = false;
-  const user = true;
+  const { isLoading, logout, user } = useAuth0()
+  const [name, setName] = useState(user?.name || '')
+  const [isEditing, setIsEditing] = useState(false)
 
   if (isLoading || !user) {
     return <div className='text-center p-4'>Loading...</div>;
