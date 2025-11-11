@@ -59,8 +59,14 @@ const Profile = () => {
 
       <h2 className='text-2xl font-semibold mb-2'>{name}</h2>
 
-
       <p className='text-gray-600'>{user.email}</p>
+
+      <button
+        className='mt-6 px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600 transition'
+        onClick={() => logout({ returnTo: window.location.origin })}
+      >
+        Logout
+      </button>
 
     </div>
   );
