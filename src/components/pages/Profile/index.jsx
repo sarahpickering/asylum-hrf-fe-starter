@@ -30,7 +30,32 @@ const Profile = () => {
       p-8 text-center border border-gray-200'>
 
       <img src={user.picture} alt={user.name} className='w-24 h-24 rounded-full mx-auto mb-4' />
-
+      {isEditing ? (
+        <div className='mb-4'>
+          <input type='text' 
+          value={name} 
+          onChange={handleChange} 
+          className='border rounded px-2 py-1 w-full' 
+          />
+          <button 
+            className='mt-2 px-4 py-2 bg-red-800/75 
+            text-white rounded-lg hover:bg-red-600 transition' 
+            onClick={saveName}
+          >
+            Save
+          </button>
+        </div>
+      ) : (
+        <>
+          <h2 className='text-2xl font-semibold mb-2'>{name}</h2>
+          <button
+            onClick={() => setIsEditing(true)}
+            className='px-r py-2 bg-neutral-300 rounded hover:bg-neutral-200 transition'
+          >
+            Edit Name
+          </button>
+        </>
+      )}
 
       <h2 className='text-2xl font-semibold mb-2'>{name}</h2>
 
