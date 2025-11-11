@@ -24,10 +24,17 @@ const Profile = () => {
   }
 
   return (
-    <div className='max-w-sm mx-auto mt-10 bg-white rounded-lg shadow-lwg p-6 text-center'>
+    <div className='
+      max-w-sm mx-auto mt-10 
+      bg-neutral-800 rounded-xl shadow-lg 
+      p-8 text-center border border-gray-200'>
 
       <img src={user.picture} alt={user.name} className='w-24 h-24 rounded-full mx-auto mb-4' />
+
+
       <h2 className='text-2xl font-semibold mb-2'>{name}</h2>
+
+
       <p className='text-gray-600'>{user.email}</p>
 
     </div>
